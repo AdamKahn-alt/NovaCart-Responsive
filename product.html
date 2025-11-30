@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>NovaCart -- Product Details</title>
+
+    <!-- Primary Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NovaCart -- Product Details">
+    <meta name="Author" content="Adam Kahn">
+    <meta name="description" content="This is a digital e-commerce web html template made by codewithadam">
+
+    <!--Favicon Images-->
+    <link rel="shortcut icon" href="favicon.svg">
+
+    <!-- CSS STYLING LINKS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myresponsive.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--GLOBAL HEADER SECTION-->
+    <header class="site-header ">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2><a href="index.html">NovaCart</a></h2>
+            </div>
+
+            <!--HIDDEN CHECKBOX-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!--Hamburger Icon-->
+            <label for="menu-toggle" class="hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link active-link">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">Check-Out</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <!--Close Button-->
+                <label for="menu-toggle" class="close-btn"><b>X</b> Close </label>
+            </ul>
+            <!--Menu Overlay-->
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+
+
+            <!--HIDDEN NAVIGATION LINKS AND HAMBURGER FOR TABLET-->
+            <ul class="nav-visible">
+                <li class="nav-tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="shop.html">Shop</a>
+            </ul>
+
+            <input type="checkbox" id="tab-menu-toggle" class="tab-menu-toggle">
+            <label for="tab-menu-toggle" class="tab-hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-tab-menu">
+                <li class="nav-tab-item active-link">
+                    <a href="product.html">Product Detail</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <label for="tab-menu-toggle" class="tab-close-btn"><b>X</b> Close
+                </label>
+            </ul>
+
+            <label for="tab-menu-toggle" class="tab-menu-overlay"></label>
+            <!--END OF TABLET'S HIDDEN NAVIGATION LINKS-->
+        </nav>
+
+    </header>
+
+    <main class="product-main">
+
+        <!--PRODUCT HERO SECTION-->
+        <section class="product-hero-section">
+            <div class="product-hero-content">
+                <h1>Find products you'll love — discover quality, style, ratings, and value.</h1>
+                <p>Explore our exclusive collections tailored for you.</p>
+            </div>
+        </section>
+
+
+        <!--PRODUCT DETAILS MAIN-->
+        <section class="product-detail-section">
+
+            <!--CAMERA DETAILS-->
+            <div class="product-detail-container" id="camera">
+
+                <!--LEFT COLUMN-->
+                <div class="left-column">
+                    <figure class="large-img">
+                        <img src="Images/products/black canon camera.jpg" alt="black Canon Camera">
+                    </figure>
+
+                    <div class="alt-pics">
+                        <article>
+                            <img src="Images/products/black canon camera side.jpg" alt="Side View">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/canon camera white.jpg" alt="White Color">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/rear canon camera.jpg" alt="Rear View">
+                        </article>
+                    </div>
+                </div>
+
+                <!--RIGHT COLUMN-->
+                <div class="right-column">
+                    <h2 class="detail-name">Canon Camera</h2>
+                    <p class="detail-description">Capture stunning memories in ultra HD clarity
+                        with the Canon professional camera, featuring advanced
+                        auto-focus and high-speed performance.
+                    </p>
+
+                    <p class="detail-price">&#36; 456.99</p>
+
+                    <label for="color" class="detail-label">Color</label>
+                    <select name="color" id="color">
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                    </select>
+
+                    <label for="size" class="detail-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Small</option>
+                    </select>
+
+                    <label for="qty" class="detail-label">Quantity</label>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+
+
+                    <div class="product-buttons">
+                        <a href="cart.html"><button value="cart">Add to Cart</button></a>
+                        <a href="checkout.html"><button value="buy">Buy Now</button></a>
+                    </div>
+
+                    <!--CUSTOMERS RATINGS AND REVIEWS-->
+                    <div class="product-reviews">
+                        <div class="friends">
+                            <h5 class="customer">FRIENDSSURROUNDED</h5>
+                            <p class="review">“Excellent camera quality, worth every naira!”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="adam">
+                            <h5 class="customer">ADAM KAHN</h5>
+                            <p class="review">“Battery lasts long and pictures are crystal clear”
+                                <br>⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="cathy">
+                            <h5 class="customer">CATHY MILLS</h5>
+                            <p class="review">“Shipping was fast and product came well packaged”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--SKY-RADAR DETAILS-->
+            <div class="product-detail-container" id="Sky-Radar">
+
+                <!--LEFT COLUMN-->
+                <div class="left-column">
+                    <figure class="large-img">
+                        <img src="Images/products/skyradar.jpg" alt="Sky Radar Quadcopter Drone">
+                    </figure>
+
+                    <div class="alt-pics">
+                        <article>
+                            <img src="Images/products/Sky-Radar Rear.png" alt="Side View">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/white Sky-Radar.jpg" alt="White Color">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/skyradar.jpg" alt="Rear View">
+                        </article>
+                    </div>
+                </div>
+
+                <!--RIGHT COLUMN-->
+                <div class="right-column">
+                    <h2 class="detail-name">Sky Radar Quadcopter Drone</h2>
+                    <p class="detail-description">The Sky-Radar is a sleek Quadcopter drone
+                        equipped with a 4 rotor blades, 1080 HD camera, altitude hold, and LED
+                        navigation lights -- ideal for aerial photography and recreational flight
+                    </p>
+
+                    <p class="detail-price">&#36; 500.00</p>
+
+                    <label for="color" class="detail-label">Color</label>
+                    <select name="color" id="color">
+                        <option value="black">Standard</option>
+                        <option value="white">White</option>
+                    </select>
+
+                    <label for="size" class="detail-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Small</option>
+                    </select>
+
+                    <label for="qty" class="detail-label">Quantity</label>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+
+
+                    <div class="product-buttons">
+                        <a href="cart.html"><button value="cart">Add to Cart</button></a>
+                        <a href="checkout.html"><button value="buy">Buy Now</button></a>
+                    </div>
+
+                    <!--CUSTOMERS RATINGS AND REVIEWS-->
+                    <div class="product-reviews">
+                        <div class="friends">
+                            <h5 class="customer">FRIENDSSURROUNDED</h5>
+                            <p class="review">“Amazing drone for begineers. Camera quality
+                                is crisp, and the controls are smooth.”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="adam">
+                            <h5 class="customer">ADAM KAHN</h5>
+                            <p class="review">“Battery lasts about 30 minutes, which is decent for the
+                                price point”
+                                <br>⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="cathy">
+                            <h5 class="customer">CATHY MILLS</h5>
+                            <p class="review">“Great Value!! Shipping was quickly and the product
+                                was packaged solidly”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--AMORA HEART PENDANT-->
+            <div class="product-detail-container" id="Diamond Necklace">
+
+                <!--LEFT COLUMN-->
+                <div class="left-column">
+                    <figure class="large-img">
+                        <img src="Images/products/Lady Necklace.jpg" alt="Amora Heart Pendant">
+                    </figure>
+
+                    <div class="alt-pics">
+                        <article>
+                            <img src="Images/products/Diamond Necklace up close.jpg" alt="up color">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/Diamond Necklace Blue Color.jpg" alt="blue Color">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/Pink Purple Scordinavian Necklace.jpg" alt="pink color">
+                        </article>
+                    </div>
+                </div>
+
+                <!--RIGHT COLUMN-->
+                <div class="right-column">
+                    <h2 class="detail-name">Amora Heart Pendant Necklace</h2>
+                    <p class="detail-description">A Delicate Heart-Shaped Pendant crafted in
+                        sterling silver with a radiant crystal centre featuring Angel Wings.
+                        Elegant and timeless -- perfect for everyday wear or gift occasions.
+                    </p>
+
+                    <p class="detail-price">&#36; 36.49</p>
+
+                    <label for="color" class="detail-label">Color</label>
+                    <select name="color" id="color">
+                        <option value="black">Pink Purple</option>
+                        <option value="white">Blue</option>
+                    </select>
+
+                    <label for="size" class="detail-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="large">Large</option>
+                        <option value="medium">Medium</option>
+                        <option value="small">Small</option>
+                    </select>
+
+                    <label for="qty" class="detail-label">Quantity</label>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+
+
+                    <div class="product-buttons">
+                        <a href="cart.html"><button value="cart">Add to Cart</button></a>
+                        <a href="checkout.html"><button value="buy">Buy Now</button></a>
+                    </div>
+
+                    <!--CUSTOMERS RATINGS AND REVIEWS-->
+                    <div class="product-reviews">
+                        <div class="friends">
+                            <h5 class="customer">FRIENDSSURROUNDED</h5>
+                            <p class="review">“Beautiful Necklace, looks exactly like the
+                                photos. Crystal sparkles in light.”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="adam">
+                            <h5 class="customer">ADAM KAHN</h5>
+                            <p class="review">“Lovely to wear on special occasions! Chain is a
+                                bit too delicate, but very elegant.”
+                                <br>⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="cathy">
+                            <h5 class="customer">CATHY MILLS</h5>
+                            <p class="review">“Very Comfortable, wore it daily -- Still Shining
+                                after 2 months.”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--CLARKS SHOE-->
+            <div class="product-detail-container" id="Clarks-Shoe">
+
+                <!--LEFT COLUMN-->
+                <div class="left-column">
+                    <figure class="large-img">
+                        <img src="Images/products/Darker Blue Clarks.jpg" alt="Clarks Shoe">
+                    </figure>
+
+                    <div class="alt-pics">
+                        <article>
+                            <img src="Images/products/Light Blue Clarks.jpg" alt="Light Blue">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/Clarks.jpg" alt="coffee brown Color">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/Blue Clarks.jpg" alt="Dark Blue color">
+                        </article>
+                    </div>
+                </div>
+
+                <!--RIGHT COLUMN-->
+                <div class="right-column">
+                    <h2 class="detail-name">Sophisticated Men's Leather Clarke</h2>
+                    <p class="detail-description">A sleek blue leather Clarke shoe crafted
+                        with premium leather and a classic rounded toe silhouette. Designed
+                        for formal and semi-formal wear. Elegantly simple with a touch of
+                        shine for <i>versatile</i> style
+                    </p>
+
+                    <p class="detail-price">&#36; 24.49</p>
+
+                    <label for="color" class="detail-label">Color</label>
+                    <select name="color" id="color">
+                        <option value="blue">Blue</option>
+                        <option value="coffee brown">Coffee Brown</option>
+                        <option value="dark blue">Dark Blue</option>
+                        <option value="light blue">Light Blue</option>
+                    </select>
+
+                    <label for="size" class="detail-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                    </select>
+
+                    <label for="qty" class="detail-label">Quantity</label>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+
+
+                    <div class="product-buttons">
+                        <a href="cart.html"><button value="cart">Add to Cart</button></a>
+                        <a href="checkout.html"><button value="buy">Buy Now</button></a>
+                    </div>
+
+                    <!--CUSTOMERS RATINGS AND REVIEWS-->
+                    <div class="product-reviews">
+                        <div class="friends">
+                            <h5 class="customer">FRIENDSSURROUNDED</h5>
+                            <p class="review">“Looks Sharp and feels comfortable even after
+                                hours of standing. The Leather Shines, exactly what I desired”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="adam">
+                            <h5 class="customer">ADAM KAHN</h5>
+                            <p class="review">“Stylish shoe, true to size. Bottom sole has
+                                good grip; however, needed a few wears to break in.”
+                                <br>⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="cathy">
+                            <h5 class="customer">CATHY MILLS</h5>
+                            <p class="review">“Great Value for a leather shoe. Fits Nicely
+                                with suits and denim -- I'm really happy with it.”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--KITCHENAID MIXER-->
+            <div class="product-detail-container" id="kitchen-mixer">
+
+                <!--LEFT COLUMN-->
+                <div class="left-column">
+                    <figure class="large-img">
+                        <img src="Images/products/KitchenAid Stand Mixer.jpg" alt="Kitchen Mixer">
+                    </figure>
+
+                    <div class="alt-pics">
+                        <article>
+                            <img src="Images/products/KitchenAid red.jpg" alt="Empire Red">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/KitchenAid Mixer Black.jpeg" alt="Onyx Black">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/KitchenAid silver.jpg" alt="Porcelain White">
+                        </article>
+                    </div>
+                </div>
+
+                <!--RIGHT COLUMN-->
+                <div class="right-column">
+                    <h2 class="detail-name">KitchenAid Artisan <!--Series 5-Quart Tilt-Head--> Stand Mixer</h2>
+                    <p class="detail-description">The KitchenAid Mixer is a versatile 4.8L
+                        tilt-head stand mixer for home bakers and chefs, ideal for both small and large
+                        batches, featuring a 300-watt motor, 10-speed, and a planetary mixing action
+                        that ensures effortless, thorough blending, kneading and mixing with
+                        Professional Precision.
+                    </p>
+
+                    <p class="detail-price">&#36; 430.00</p>
+
+                    <label for="color" class="detail-label">Color</label>
+                    <select name="color" id="color">
+                        <option value="Pistachio">Pistachio</option>
+                        <option value="Empire Red">Empire Red</option>
+                        <option value="Porcelain White">Porcelain White</option>
+                        <option value="onyx black">Onyx Black</option>
+                    </select>
+
+                    <label for="size" class="detail-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="39">Small</option>
+                        <option value="40">Medium</option>
+                        <option value="41">Large</option>
+                        <option value="41">Extra Large</option>
+                    </select>
+
+                    <label for="qty" class="detail-label">Quantity</label>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+
+
+                    <div class="product-buttons">
+                        <a href="cart.html"><button value="cart">Add to Cart</button></a>
+                        <a href="checkout.html"><button value="buy">Buy Now</button></a>
+                    </div>
+
+                    <!--CUSTOMERS RATINGS AND REVIEWS-->
+                    <div class="product-reviews">
+                        <div class="friends">
+                            <h5 class="customer">FRIENDSSURROUNDED</h5>
+                            <p class="review">“Worth every naira, It's Sturdy and Smooth, though
+                                It's a bit heavy to move around. Still my best Kitchen Investment”
+                                <br> ⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="adam">
+                            <h5 class="customer">ADAM KAHN</h5>
+                            <p class="review">“Absolutely love it! It's powerful, quiet and the
+                                color pops on my countertop. Mixing dough is a breeze.”
+                                <br>⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="cathy">
+                            <h5 class="customer">CATHY MILLS</h5>
+                            <p class="review">“The attachments make it so versatile. From
+                                Bread dough to whipped cream, it handles everything perfectly.”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="henry">
+                            <h5 class="customer">HENRY OBAMA</h5>
+                            <p class="review">“Received it as a wedding gift -- it's stylish
+                                and functional. Takes up some counter space but totally worth it.”
+                                <br> ⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--THOR OVEN MIXER-->
+            <div class="product-detail-container" id="THOR KITCHEN OVEN">
+
+                <!--LEFT COLUMN-->
+                <div class="left-column">
+                    <figure class="large-img">
+                        <img src="Images/products/Thor oven open.jpg" alt="Thor Oven">
+                    </figure>
+
+                    <div class="alt-pics">
+                        <article>
+                            <img src="Images/products/Thor Oven double.jpg" alt="double">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/Thor Kitchen Oven.jpg" alt="front">
+                        </article>
+
+                        <article>
+                            <img src="Images/products/Thor oven front.jpg" alt="front">
+                        </article>
+                    </div>
+                </div>
+
+                <!--RIGHT COLUMN-->
+                <div class="right-column">
+                    <h2 class="detail-name">Thor Kitchen 48" Professional Gas Range</h2>
+                    <p class="detail-description">Crafted for both performance and elegance, the
+                        Thor Kitchen 48-inch Professional Gas Range combines restaurant-level power
+                        with home-style versatility. Its six high-BTU burners and stainless steel
+                        griddle deliver precise heat for any meal, while dual convection oven lets
+                        you bake, roast and broil multiple dishes at once. Built from durable stainless
+                        steel with bold control knobs and blue LED indicators.
+                    </p>
+
+                    <p class="detail-price">&#36; 4,400.00</p>
+
+                    <label for="color" class="detail-label">Color</label>
+                    <select name="color" id="color">
+                        <option value="stainless steel">Stainless Steel</option>
+                    </select>
+
+                    <label for="size" class="detail-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="39">48-inch</option>
+                    </select>
+
+                    <label for="qty" class="detail-label">Quantity</label>
+                    <input type="number" id="qty" min="1" max="10" value="1">
+
+
+                    <div class="product-buttons">
+                        <a href="cart.html"><button value="cart">Add to Cart</button></a>
+                        <a href="checkout.html"><button value="buy">Buy Now</button></a>
+                    </div>
+
+                    <!--CUSTOMERS RATINGS AND REVIEWS-->
+                    <div class="product-reviews">
+                        <div class="friends">
+                            <h5 class="customer">FRIENDSSURROUNDED</h5>
+                            <p class="review">“Love the even convection bake and the solid cast-iron
+                                grates. Only knock: the control lights are a bit bright at night.
+                                Otherwise an excellent centerpiece for my kitchen”
+                                <br> ⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="adam">
+                            <h5 class="customer">ADAM KAHN</h5>
+                            <p class="review">“Performance is top tier, but make sure your cabinets
+                                and hood can handle the size -- It's a statement piece. Would've given
+                                4 stars if installation was simpler.”
+                                <br>⭐⭐⭐
+                            </p>
+                        </div>
+
+                        <div class="henry">
+                            <h5 class="customer">HENRY OBAMA</h5>
+                            <p class="review">“Stainless finish looks premium and the knobs feel heavy
+                                and durable. Convection makes baked goods come out evenly -- highly
+                                recommend for serious home cooks and bakes.”
+                                <br> ⭐⭐⭐⭐⭐
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!--CUSTOMER REVIEWS SECTION-->
+        <section class="customer-reviews">
+
+            <h3 class="review-title">Customer Reviews</h3>
+
+            <div class="review-grid">
+                <div class="friends">
+                    <h2>FRIENDSSURROUNDED</h2>
+                    <p><span>★★★★★</span> <br>
+                        I'm in love with this E-Commerce platform! Every item I've purchased
+                        has come just as displayed. The Products are authentic, stylish, and met my
+                        expectations fully. It's refreshing to see a brand that combines modern
+                        Convenience with genuine care for customers. NovaCart gives off a premium
+                        vibe without the premium stress
+                    </p>
+                </div>
+
+                <div class="adam">
+                    <h2>ADAM KAHN</h2>
+                    <p><span>★★★★★</span> <br>
+                        NovaCart stands out for its attention to detail and smooth shopping flow.
+                        The Interface made navigation easy and Check-Out was seamless. The Product
+                        exceeded expectations in both durability and appearance. It's clear that
+                        NovaCart values customer satisfaction. Definitely my go-to store.
+                    </p>
+                </div>
+
+                <div class="cathy">
+                    <h2>CATHY MILLS</h2>
+                    <p><span>★★★★★</span> <br>
+                        My experience with NovaCart was nothing short of excellent. The E-Commerce
+                        platform is beautifully designed, intuitive and efficient and has a futurist-esque
+                        aesthetics with products being premium quality and timely delivery. I'll defintely be
+                        returning for future purchases.
+                    </p>
+                </div>
+
+
+
+                <div class="henry">
+                    <h2>HENRY OBAMA</h2>
+                    <p><span>★★★★★</span> <br>
+                        I was genuinely impressed with the service quality. My order arrived
+                        on schedule, carefully packaged and in perfect condition and it matches
+                        the description perfectly. The support team's quick response to my inquiry
+                        makes the experience even better. I'd happily recommend NovaCart to anyone.
+                    </p>
+                </div>
+
+                <div class="techlover">
+                    <h2>TECHLOVER99</h2>
+                    <p><span>★★★★★</span> <br>
+                        I've been shopping online for years, and NovaCart easily ranks among the
+                        best experiences I've had. The Check-Out was secure, delivery was on time, and
+                        the product was well packaged, and even looked even better in person. Excellent
+                        Platform Overall.
+                    </p>
+                </div>
+
+                <div class="cathy">
+                    <h2>LUNAWEARS</h2>
+                    <p><span>★★★★★</span> <br>
+                        I wasn't expecting the unboxing to feel this premium. The product is sturdy,
+                        beautiful and clearly well-made. It's rare to see this level of quality control
+                        and attention to branding in local e-commerce.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--YOU MAY ALSO LIKE SECTION-->
+        <section class="may-also-like">
+            <div class="like-title">
+                <h3 id="like-title" class="like-title-actual">You May Also Like</h3>
+            </div>
+
+            <div class="like-container">
+                <article>
+                    <figure>
+                        <img src="Images/products/Louis Vuitton earphones.jpg" alt="Louis Vuitton earphones">
+                    </figure>
+
+                    <h2>LOUIS VUITTON EARPHONES</h2>
+                    <p>&#36; 400.00 </p>
+                    <button value="add to cart">Add to Cart</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="Images/products/focal headphones.jpg" alt="focal headphones">
+                    </figure>
+
+                    <h2>focal <br> headphones</h2>
+                    <p>&#36; 126.99 </p>
+                    <button value="add to cart">Add to Cart</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="Images/products/Bulova watch.jpg" alt="Bulova Watch">
+                    </figure>
+
+                    <h2>Bulova <br> Wristwatch</h2>
+                    <p>&#36; 100.00 </p>
+                    <button value="add to cart">Add to Cart</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="Images/products/G5 Wired Gaming Mouse.jpg" alt="G5 Wired Gaming Mouse">
+                    </figure>
+
+                    <h2>G5 WIRED GAMING MOUSE</h2>
+                    <p>&#36; 50.00 </p>
+                    <button value="add to cart">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">
+                        Stay Updated, Stay Ahead<br /><span>With NovaCart</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Join our exclusive NovaCart community to get the
+                        latest updates on deals of the day, upcoming product
+                        launches and members-only discounts. Suscribing to
+                        our newsletter gets you exclusive deals, the latest
+                        product updates and shopping teams -- Straight to
+                        your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!--FOOTER SECTION-->
+        <footer class="site-footer">
+            <!-- Quick Navigation Links -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>
+                        About <br />
+                        NovaCart
+                    </h3>
+                    <p>
+                        NovaCart is your go-to online store for electronics,
+                        fashion, and more.<br />
+                        Shop quality products at affordable prices with fast
+                        delivery.
+                    </p>
+                </div>
+
+                <!---Footer Quick Links-->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Product Detail</a></li>
+                        <li><a href="cart.html">Shop Cart</a></li>
+                        <li><a href="checkout.html">Check-Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for updates and exclusive deals.</p>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required class="footer-input" />
+                        <button type="submit" class="footer-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-socials">
+                    <h3 class="footer-title">Follow Us</h3>
+
+                    <div class="social-images">
+                        <a href="https://www.facebook.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-facebook.svg" 
+                            alt="Facebook" class="social-icon" /> -->
+                            <i class="fab fa-facebook" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Facebook</span>
+                        </a>
+
+                        <a href="https://www.twitter.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-twitter.svg" 
+                            alt="X" class="social-icon" /> -->
+                            <i class="fa-brands fa-twitter" id="social-icon"></i>
+                            <span class="social-text">Follow Us on X</span>
+                        </a>
+
+                        <a href="https://www.instagram.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-instagram.svg" 
+                            alt="Instagram" class="social-icon" /> -->
+                            <i class="fa-brands fa-instagram" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p id="copyright">&copy; <span id="copy-year"> 2025 </span>
+                    NovaCart. All rights reserved.
+                </p>
+                <h4>Code with Adam</h4>
+            </div>
+        </footer>
+
+    </main>
+    <button id="scrollTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JS FILES CONNECTED -->
+    <script src="JS/script - auto update year and scroll-to-top button.js"></script>
+</body>
+
+</html>

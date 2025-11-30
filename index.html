@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>NovaCart -- Home</title>
+
+    <!-- Primary Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NovaCart -- Home">
+    <meta name="Author" content="Adam Kahn">
+    <meta name="description" content="This is a digital e-commerce web html template made by codewithadam">
+
+    <!--Favicon Images-->
+    <link rel="shortcut icon" href="favicon.svg">
+
+    <!-- CSS STYLING LINKS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myresponsive.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--GLOBAL HEADER SECTION-->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2><a href="index.html">NovaCart</a></h2>
+            </div>
+
+            <!--HIDDEN CHECKBOX-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+            <!--Hamburger Icon-->
+            <label for="menu-toggle" class="hamburger"> &#9776; </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">Check-Out</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <!--Close Button-->
+                <label for="menu-toggle" class="close-btn"><b>X</b> Close
+                </label>
+            </ul>
+            <!--Menu Overlay-->
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+            <!--HIDDEN NAVIGATION LINKS AND HAMBURGER FOR TABLET-->
+            <ul class="nav-visible">
+                <li class="nav-tab active-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="shop.html">Shop</a>
+                </li>
+            </ul>
+
+            <input type="checkbox" id="tab-menu-toggle" class="tab-menu-toggle" />
+            <label for="tab-menu-toggle" class="tab-hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-tab-menu">
+                <li class="nav-tab-item">
+                    <a href="product.html">Product Details</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <label for="tab-menu-toggle" class="tab-close-btn"><b>X</b> Close
+                </label>
+            </ul>
+
+            <label for="tab-menu-toggle" class="tab-menu-overlay"></label>
+            <!--END OF TABLET'S HIDDEN NAVIGATION LINKS-->
+        </nav>
+    </header>
+
+    <main class="index-main">
+
+        <!--HERO SECTION-->
+        <section class="hero">
+            <figure class="hero-banner">
+                <img src="Images/hero/back.jpg" alt="Hero Image" class="hero-image" loading="eager" />
+
+                <img src="Images/hero/hero4.png" alt="Hero Image" loading="eager" class="hero-mobile" />
+            </figure>
+
+            <div class="hero-content">
+                <h1 class="h1-hero-welcome">
+                    Welcome to <span> NovaCart </span>
+                </h1>
+                <h2 class="h2-hero-welcome">
+                    Where Convenience Meets Choice
+                </h2>
+
+                <p class="hero-text">
+                    From gears to gadgets to garments, a destination for
+                    everything you love <br />
+                    Explore a curated selection of products and enjoy a
+                    seamless shopping <br />
+                    designed to make your life easier, faster and more fun
+                    --- Just a Click away!
+                </p>
+
+                <div class="hero-cta">
+                    <a href="shop.html" target="_self">
+                        <button class="hero-btn">SHOP NOW</button>
+                    </a>
+
+                    <p class="Microcopy">
+                        Free shipping on orders below <b>&#36;1000</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--FEATURED PRODUCTS SECTION-->
+        <section class="featured-products">
+            <h2 class="featured-products-text">Our Featured Products</h2>
+
+            <div class="product-grid">
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/G5 Wired Gaming Mouse.jpg" alt="G5 wired gaming mouse"
+                        class="product-image" id="product-image">
+
+                    <h3 class="product-name" id="product-name">G5 Wired Gaming Mouse</h3>
+                    <p class="product-price" id="product-price">&#36; 9.99</p>
+
+                    <!-- <a href="cart.html" target="_self"> -->
+                    <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                    <!-- </a> -->
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/3-in-1 glowing led light charge.jpg"
+                        alt="3-in-1 Glowing led light Charger" class="product-image" id="product-image">
+
+                    <h3 class="product-name" id="product-name">
+                        3-in-1 Glowing Led Light Charger
+                    </h3>
+                    <p class="product-price" id="product-price">&#36; 6.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button class="product-button" id="add-to-cart-btn">
+                            Add to Cart
+                        </button></a>
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/Smart Shade.jpg" alt="Smart Shades" class="product-image"
+                        id="product-image">
+
+                    <h3 id="product-name" class="product-name">Smart Shades</h3>
+                    <p class="product-price" id="product-price">&#36; 16.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button class="product-button" id="add-to-cart-btn">
+                            Add to Cart
+                        </button></a>
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/Sonoma.jpg" alt="Sonoma Shoes" class="product-image" id="product-image">
+
+                    <h3 class="product-name" id="product-name">Sonoma</h3>
+                    <p class="product-price" id="product-price">&#36; 22.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button class="product-button" id="add-to-cart-btn">
+                            Add to Cart
+                        </button></a>
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/Mitzie.jpg" alt="Mitzie" class="product-image" id="product-image">
+
+                    <h3 class="product-name" id="product-name">Mitzie</h3>
+                    <p class="product-price" id="product-price">&#36; 4.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button id="add-to-cart-btn" class="product-button">
+                            Add to Cart
+                        </button></a>
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/Clarks.jpg" alt="Light Brown Clarks" class="product-image"
+                        id="product-image">
+                    <h3 id="product-name" class="product-name">Clarks</h3>
+                    <p class="product-price" id="product-price">&#36; 24.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button class="product-button" id="add-to-cart-btn">
+                            Add to Cart
+                        </button></a>
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/Eyekeeper glasses.jpg" alt="Eyekeeper Glasses" class="product-image"
+                        id="product-image" />
+                    <h3 class="product-name" id="product-name">Eyekeeper Glasses</h3>
+                    <p class="product-price" id="product-price">&#36; 14.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button class="product-button" id="add-to-cart-btn">
+                            Add to Cart
+                        </button></a>
+                </article>
+
+                <article class="product-card" id="product-card-cont">
+                    <img src="Images/products/fancy airpods.jpg" alt="Fancy airpods" class="product-image"
+                        id="product-image" />
+
+                    <h3 class="product-name" id="product-name">Fancy airpods</h3>
+                    <p class="product-price" id="product-price">&#36; 50.99</p>
+
+                    <a href="cart.html" target="_self">
+                        <button id="add-to-cart-btn" class="product-button">
+                            Add to Cart
+                        </button>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!--CATEGORY SHOWCASE SECTION-->
+        <section class="category-showcase">
+            <h2 class="category-showcase-text">
+                Shop by Category
+            </h2>
+            <span class="category-showcase-span">Browse our product categories</span>
+
+            <div class="category-grid">
+                <article class="category-card">
+                    <section>
+                        <img src="Images/icons/fashion.jpg" alt="Fashion Icon" class="category-image" />
+                        <h3 class="category-text">
+                            Fashion and Accessories
+                        </h3>
+
+                        <a href="shop.html#fashion" target="_self">
+                            <button class="category-button">
+                                Shop Fashion and Accessories
+                            </button></a>
+                    </section>
+                </article>
+
+                <article class="category-card">
+                    <section>
+                        <img src="Images/icons/Home and Kitchen Icon.webp" alt="Home and Kitchen icon"
+                            class="category-image" />
+                        <h3 class="category-text">Home and Kitchen</h3>
+
+                        <a href="shop.html#home-kitchen" target="_self">
+                            <button class="category-button">
+                                Shop Home and Kitchen
+                            </button></a>
+                    </section>
+                </article>
+
+                <article class="category-card">
+                    <section>
+                        <img src="Images/icons/sports icon.png" alt="Sports Icon" class="category-image" />
+                        <h3 class="category-text">Sports and Equipments</h3>
+
+                        <a href="shop.html#sports" target="_self">
+                            <button class="category-button">
+                                Shop Sports and Equipments
+                            </button></a>
+                    </section>
+                </article>
+
+                <article class="category-card">
+                    <section>
+                        <img src="Images/icons/Electronics icon.jpg" alt="Electronics Icon" class="category-image" />
+                        <h3 class="category-text">
+                            Electronics and Gadgets
+                        </h3>
+
+                        <a href="shop.html#electronics" target="_self">
+                            <button class="category-button">
+                                Shop Electronics and Gadgets
+                            </button></a>
+                    </section>
+                </article>
+            </div>
+        </section>
+
+        <!--DEAL OF THE DAY-->
+        <section class="deals-section">
+            <h2 class="deals-title">DEALS OF THE DAY</h2>
+            <h4 class="ends-in">Ends In</h4>
+
+            <div class="countdown-timer" id="timer">
+                <span class="time">12:</span>
+                <b style="font-size: 2.45rem; color: #a0522d;">:</b>
+                <span class="time">28:</span>
+                <b style="font-size: 2.45rem; color: #a0522d;">:</b>
+                <span class="time">45</span>
+            </div>
+
+            <!-- <script src="JS/script.js"></script> -->
+
+            <div class="deals-grid">
+                <article class="deals-card" id="product-card-cont">
+                    <img src="Images/icons/Citizen Watch ⌚.jpg" alt="Citizen WristWatch" class="deals-image"
+                        id="product-image" />
+                    <h3 class="deals-name" id="product-name">Citizen</h3>
+
+                    <p class="deals-percent">-60&#37; off</p>
+
+                    <p class="deals-prices">
+                        <span class="deals-price" id="product-price">&#36; 99.99</span>
+                    </p>
+
+                    <a href="cart.html">
+                        <button class="deals-btn-cart" id="add-to-cart-btn">Add to Cart</button>
+                    </a>
+                    <br />
+
+                    <a href="checkout.html">
+                        <button class="deals-btn-buy">Buy Now</button>
+                    </a>
+                </article>
+
+                <article class="deals-card" id="product-card-cont">
+                    <img src="Images/icons/Leaper Canvas Backpack.jpg" alt="Leaper Canvas Backpack" class="deals-image"
+                        id="product-image" />
+                    <h3 class="deals-name" id="product-name">Leaper Canvas</h3>
+
+                    <p class="deals-percent">-46&#37; off</p>
+
+                    <p class="deals-prices">
+                        <span class="deals-price" id="product-price">&#36; 35.99</span>
+                    </p>
+
+                    <a href="cart.html">
+                        <button class="deals-btn-cart" id="add-to-cart-btn">Add to Cart</button>
+                    </a>
+                    <br />
+
+                    <a href="checkout.html">
+                        <button class="deals-btn-buy">Buy Now</button>
+                    </a>
+                </article>
+
+                <article class="deals-card" id="product-card-cont">
+                    <img src="Images/icons/Rove R2-4K.jpg" alt="Rove R2-4K Camera" class="deals-image"
+                        id="product-image" />
+                    <h3 class="deals-name" id="product-name">Rove R2-4K</h3>
+
+                    <p class="deals-percent">-80&#37; off</p>
+
+                    <p class="deals-prices">
+                        <span class="deals-price" id="product-price">&#36; 150.00 </span>
+                    </p>
+
+                    <a href="cart.html">
+                        <button class="deals-btn-cart" id="add-to-cart-btn">Add to Cart</button>
+                    </a>
+                    <br />
+
+                    <a href="checkout.html">
+                        <button class="deals-btn-buy">Buy Now</button>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">
+                        Stay Updated, Stay Ahead<br /><span>With NovaCart</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Join our exclusive NovaCart community to get the
+                        latest updates on deals of the day, upcoming product
+                        launches and members-only discounts. Suscribing to
+                        our newsletter gets you exclusive deals, the latest
+                        product updates and shopping teams -- Straight to
+                        your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!--FOOTER SECTION-->
+        <footer class="site-footer">
+            <!-- Quick Navigation Links -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>
+                        About <br />
+                        NovaCart
+                    </h3>
+                    <p>
+                        NovaCart is your go-to online store for electronics,
+                        fashion, and more.<br />
+                        Shop quality products at affordable prices with fast
+                        delivery.
+                    </p>
+                </div>
+
+                <!---Footer Quick Links-->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Product Detail</a></li>
+                        <li><a href="cart.html">Shop Cart</a></li>
+                        <li><a href="checkout.html">Check-Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for updates and exclusive deals.</p>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required class="footer-input" />
+                        <button type="submit" class="footer-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-socials">
+                    <h3 class="footer-title">Follow Us</h3>
+
+                    <div class="social-images">
+                        <a href="https://www.facebook.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-facebook.svg" 
+                            alt="Facebook" class="social-icon" /> -->
+                            <i class="fab fa-facebook" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Facebook</span>
+                        </a>
+
+                        <a href="https://www.twitter.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-twitter.svg" 
+                            alt="X" class="social-icon" /> -->
+                            <i class="fa-brands fa-twitter" id="social-icon"></i>
+                            <span class="social-text">Follow Us on X</span>
+                        </a>
+
+                        <a href="https://www.instagram.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-instagram.svg" 
+                            alt="Instagram" class="social-icon" /> -->
+                            <i class="fa-brands fa-instagram" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p id="copyright">&copy; <span id="copy-year"> 2025 </span>
+                    NovaCart. All rights reserved.
+                </p>
+                <h4>Code with Adam</h4>
+            </div>
+        </footer>
+
+        <!-- C:\Users\user\AppData\Roaming\Code\User\settings.json -->
+    </main>
+    <button id="scrollTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JS FILES CONNECTED -->
+    <script src="JS/script - auto update year and scroll-to-top button.js"></script>
+    <script src="JS/script - timer countdown.js"></script>
+    <script src="JS/script -- cart-functionality.js"></script>
+    <script src="JS/script -- checkout page functionality.js"></script>
+</body>
+
+</html>

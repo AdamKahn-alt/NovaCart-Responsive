@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>NovaCart -- Contact</title>
+
+    <!-- Primary Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NovaCart -- Contact">
+    <meta name="Author" content="Adam Kahn">
+    <meta name="description" content="This is a digital e-commerce web html template made by codewithadam">
+
+    <!--Favicon Images-->
+    <link rel="shortcut icon" href="favicon.svg">
+
+    <!-- CSS STYLING LINKS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myresponsive.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- GLOBAL HEADER SECTION -->
+    <header class="site-header ">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2><a href="index.html">NovaCart</a></h2>
+            </div>
+
+            <!--HIDDEN CHECKBOX-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!--Hamburger Icon-->
+            <label for="menu-toggle" class="hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">Check-Out</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active-link">Contact</a>
+                </li>
+
+                <!--Close Button-->
+                <label for="menu-toggle" class="close-btn"><b>X</b> Close </label>
+            </ul>
+            <!--Menu Overlay-->
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+
+
+            <!--HIDDEN NAVIGATION LINKS AND HAMBURGER FOR TABLET-->
+            <ul class="nav-visible">
+                <li class="nav-tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="shop.html">Shop</a>
+            </ul>
+
+            <input type="checkbox" id="tab-menu-toggle" class="tab-menu-toggle">
+            <label for="tab-menu-toggle" class="tab-hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-tab-menu">
+                <li class="nav-tab-item">
+                    <a href="product.html">Product Details</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="nav-tab-item active-link">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <label for="tab-menu-toggle" class="tab-close-btn"><b>X</b> Close
+                </label>
+            </ul>
+
+            <label for="tab-menu-toggle" class="tab-menu-overlay"></label>
+            <!--END OF TABLET'S HIDDEN NAVIGATION LINKS-->
+        </nav>
+
+    </header>
+
+
+    <main id="contact-main">
+
+        <!-- CHECKOUT HERO SECTION -->
+        <section class="contact-hero">
+            <h2>Get in touch with NovaCart</h2>
+            <p>We're here to help -- Whether it's feedback, support, or partnership.</p>
+        </section>
+
+        <!-- MAIN CONTACT FORM SECTION -->
+        <section class="form-section">
+            <form action="#" method="post" id="contact-form" class="contact-form">
+
+                <!-- LEFT COLUMN -->
+                <div class="actual-form">
+                    <h3>Contact Us</h3>
+
+                    <input type="text" name="contact-name" id="contact-name" placeholder="Full Name">
+                    <input type="email" name="contact-email" id="contact-email" placeholder="Email Address">
+                    <input type="text" name="contact-subject" id="contact-subject" placeholder="Subject">
+                    <textarea name="subject-message" placeholder="Message" rows="4" cols="20"
+                        id="subject-message"></textarea>
+
+                    <a href="index.html"><input type="button" value="Send Message" id="contact-btn"></a>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="contact-info">
+
+                    <h3>Contact Info</h3>
+
+                    <figure>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+234 816 686 2236</p>
+                    </figure>
+
+                    <figure>
+                        <i class="fa-solid fa-message"></i>
+                        <p><a href="mailto:adamsonobodozie@gmail.com">adamsonobodozie@gmail.com</a> <br>
+                            <a href="mailto:info@novacart.com">info@novacart.com</a>
+                        </p>
+                    </figure>
+
+                    <figure>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>CUL Imota Ikorodu, Lagos, Nigeria</p>
+                    </figure>
+
+                    <figure class="map-container">
+                        <a href="https://www.google.com/maps/place/CUL+Imota+Ikorodu,+Lagos,+Nigeria" target="_blank">
+                            <img class="map-thumb" src="Images/icons/location_novacart2.jpg" alt="Map of NovaCart"
+                                loading="eager">
+                        </a>
+                    </figure>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">
+                        Stay Updated, Stay Ahead<br /><span>With NovaCart</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Join our exclusive NovaCart community to get the
+                        latest updates on deals of the day, upcoming product
+                        launches and members-only discounts. Suscribing to
+                        our newsletter gets you exclusive deals, the latest
+                        product updates and shopping teams -- Straight to
+                        your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!--FOOTER SECTION-->
+        <footer class="site-footer">
+            <!-- Quick Navigation Links -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>
+                        About <br />
+                        NovaCart
+                    </h3>
+                    <p>
+                        NovaCart is your go-to online store for electronics,
+                        fashion, and more.<br />
+                        Shop quality products at affordable prices with fast
+                        delivery.
+                    </p>
+                </div>
+
+                <!---Footer Quick Links-->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Product Detail</a></li>
+                        <li><a href="cart.html">Shop Cart</a></li>
+                        <li><a href="checkout.html">Check-Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for updates and exclusive deals.</p>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required class="footer-input" />
+                        <button type="submit" class="footer-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-socials">
+                    <h3 class="footer-title">Follow Us</h3>
+
+                    <div class="social-images">
+                        <a href="https://www.facebook.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-facebook.svg" 
+                            alt="Facebook" class="social-icon" /> -->
+                            <i class="fab fa-facebook" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Facebook</span>
+                        </a>
+
+                        <a href="https://www.twitter.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-twitter.svg" 
+                            alt="X" class="social-icon" /> -->
+                            <i class="fa-brands fa-twitter" id="social-icon"></i>
+                            <span class="social-text">Follow Us on X</span>
+                        </a>
+
+                        <a href="https://www.instagram.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-instagram.svg" 
+                            alt="Instagram" class="social-icon" /> -->
+                            <i class="fa-brands fa-instagram" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p id="copyright">&copy; <span id="copy-year"> 2025 </span>
+                    NovaCart. All rights reserved.
+                </p>
+                <h4>Code with Adam</h4>
+            </div>
+        </footer>
+    </main>
+    <button id="scrollTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JS FILES CONNECTED -->
+    <script src="JS/script - auto update year and scroll-to-top button.js"></script>
+</body>
+
+</html>

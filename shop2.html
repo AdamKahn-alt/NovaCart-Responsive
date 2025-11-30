@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>NovaCart -- Shop</title>
+
+    <!-- Primary Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NovaCart -- Shop">
+    <meta name="Author" content="Adam Kahn">
+    <meta name="description" content="This is a digital e-commerce web html template made by codewithadam">
+
+    <!--Favicon Images-->
+    <link rel="shortcut icon" href="favicon.svg">
+
+    <!-- CSS STYLING LINKS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myresponsive.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--GLOBAL HEADER SECTION-->
+    <header class="site-header ">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2><a href="index.html">NovaCart</a></h2>
+            </div>
+
+            <!--HIDDEN CHECKBOX-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!--Hamburger Icon-->
+            <label for="menu-toggle" class="hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link active-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">Check-Out</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <!--Close Button-->
+                <label for="menu-toggle" class="close-btn"><b>X</b> Close </label>
+            </ul>
+            <!--Menu Overlay-->
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+
+
+            <!--HIDDEN NAVIGATION LINKS AND HAMBURGER FOR TABLET-->
+            <ul class="nav-visible">
+                <li class="nav-tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-tab active-link">
+                    <a href="shop.html">Shop</a>
+            </ul>
+
+            <input type="checkbox" id="tab-menu-toggle" class="tab-menu-toggle">
+            <label for="tab-menu-toggle" class="tab-hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-tab-menu">
+                <li class="nav-tab-item">
+                    <a href="product.html">Product Details</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <label for="tab-menu-toggle" class="tab-close-btn"><b>X</b> Close
+                </label>
+            </ul>
+
+            <label for="tab-menu-toggle" class="tab-menu-overlay"></label>
+            <!--END OF TABLET'S HIDDEN NAVIGATION LINKS-->
+        </nav>
+
+    </header>
+
+    <main class="shop-main">
+
+
+        <!--SHOP HERO SECTION-->
+        <section class="shop-hero">
+
+            <div class="shop-hero-content">
+
+                <h1 class="shop-title">Our Shop</h1>
+                <p class="shop-subtitle">Find Products you'll love and more, at the best
+                    prices
+                </p>
+            </div>
+
+
+            <!--FILTER/SORT BAR-->
+            <div class="shop-controls-content">
+
+                <form action="" class="filter-form">
+
+                    <select name="category" id="category" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics & Gadgets</option>
+                        <option value="fashion">Fashion & Accessories</option>
+                        <option value="home">Home & Kitchen</option>
+                        <option value="sports">Sports & Equipments</option>
+                    </select>
+
+
+                    <!--Sort Dropdown-->
+                    <select name="sort" id="sort" class="filter-select">
+                        <option value="default">Sort by Default</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                        <option value="new-arrivals">New Arrivals</option>
+                    </select>
+                </form>
+            </div>
+
+        </section>
+
+        <!--MAIN PRODUCT GRID-->
+        <section class="shop-products">
+
+            <div class="container">
+
+                <!--ELECTRONICS & GADGETS CATEGORY-->
+                <div class="product-category">
+                    <h2 id="electronics" class="category-title">ELECTRONICS & GADGETS</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2020-06-23">
+                            <img src="Images/products/black canon camera.jpg" alt="Canon Camera" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Canon Camera</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 456.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--FASHION AND ACCESSORIES CATEGORY-->
+                <div class="product-category">
+                    <h2 class="category-title" id="fashion">FASHION & ACCESSORIES</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2024-04-23">
+                            <img src="Images/products/High Heels.jpg" alt="High Heels" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">High Heels</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 76.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--SPORTS AND EQUIPMENTS CATEGORY-->
+                <div class="product-category">
+                    <h2 class="category-title" id="sports">SPORTS & EQUIPMENTS</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2015-05-17">
+                            <img src="Images/products/black canon camera.jpg" alt="Canon Camera" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Canon Camera</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 456.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--HOME AND KITCHEN CATEGORY-->
+                <div class="product-category">
+                    <h2 class="category-title" id="home">HOME &#38; KITCHEN</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2014-05-19">
+                            <img src="Images/products/Fleshlight.jpeg" alt="Fleshlight" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Fleshlight</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 16.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-03-18">
+                            <img src="Images/products/Coffee Brewer.jpeg" alt="Coffee brewer"
+                                aria-labelledby="coffee brewer" class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Coffee Brewer</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 46.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-07-10">
+                            <img src="Images/products/Fry Pan Set.jpeg" alt="Fry Pan Set" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Fry Pans</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 12.59</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-07-12">
+                            <img src="Images/products/Kitchen Oven.jpeg" alt="Kitchen Oven" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Classic Kitchen Oven</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 200.00</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-07-05">
+                            <img src="Images/products/Stainless Pans.jpeg" alt="Stainless Pans" class="product-image">
+                            <h3 class="product-name">Stainless Pans</h3>
+
+                            <p class="product-prices">&#36; 17.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-01">
+                            <img src="Images/products/Thor Kitchen Oven.jpg" alt="Kitchen Oven" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Thor's Kitchen Oven</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 1700.00</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--GLOBAL PAGINATION-->
+                <div class="pagination">
+                    <a href="shop.html" class="prev">Prev</a>
+                    <a href="shop.html" class="pagnum">1</a>
+                    <a href="shop2.html" class="pagnum active">2</a>
+                    <!--<a href="shop3.html" class="pagnum">3</a>-->
+                    <a href="shop2.html" class="next">Next</a>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">
+                        Stay Updated, Stay Ahead<br /><span>With NovaCart</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Join our exclusive NovaCart community to get the
+                        latest updates on deals of the day, upcoming product
+                        launches and members-only discounts. Suscribing to
+                        our newsletter gets you exclusive deals, the latest
+                        product updates and shopping teams -- Straight to
+                        your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!--FOOTER SECTION-->
+        <footer class="site-footer">
+            <!-- Quick Navigation Links -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>
+                        About <br />
+                        NovaCart
+                    </h3>
+                    <p>
+                        NovaCart is your go-to online store for electronics,
+                        fashion, and more.<br />
+                        Shop quality products at affordable prices with fast
+                        delivery.
+                    </p>
+                </div>
+
+                <!---Footer Quick Links-->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Product Detail</a></li>
+                        <li><a href="cart.html">Shop Cart</a></li>
+                        <li><a href="checkout.html">Check-Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for updates and exclusive deals.</p>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required class="footer-input" />
+                        <button type="submit" class="footer-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-socials">
+                    <h3 class="footer-title">Follow Us</h3>
+
+                    <div class="social-images">
+                        <a href="https://www.facebook.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-facebook.svg" 
+                            alt="Facebook" class="social-icon" /> -->
+                            <i class="fab fa-facebook" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Facebook</span>
+                        </a>
+
+                        <a href="https://www.twitter.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-twitter.svg" 
+                            alt="X" class="social-icon" /> -->
+                            <i class="fa-brands fa-twitter" id="social-icon"></i>
+                            <span class="social-text">Follow Us on X</span>
+                        </a>
+
+                        <a href="https://www.instagram.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-instagram.svg" 
+                            alt="Instagram" class="social-icon" /> -->
+                            <i class="fa-brands fa-instagram" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p id="copyright">&copy; <span id="copy-year"> 2025 </span>
+                    NovaCart. All rights reserved.
+                </p>
+                <h4>Code with Adam</h4>
+            </div>
+        </footer>
+    </main>
+    <button id="scrollTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JS FILES CONNECTED -->
+    <script src="JS/script - auto update year and scroll-to-top button.js"></script>
+    <script src="JS/script -- cart-functionality.js"></script>
+    <script src="JS/script -- shop page functionality.js"></script>
+</body>
+
+</html>

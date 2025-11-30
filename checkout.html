@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>NovaCart -- Check-Out</title>
+
+    <!-- Primary Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NovaCart -- Check-Out">
+    <meta name="Author" content="Adam Kahn">
+    <meta name="description" content="This is a digital e-commerce web html template made by codewithadam">
+
+    <!--Favicon Images-->
+    <link rel="shortcut icon" href="favicon.svg">
+
+    <!-- CSS STYLING LINKS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myresponsive.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="site-header ">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2><a href="index.html">NovaCart</a></h2>
+            </div>
+
+            <!--HIDDEN CHECKBOX-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!--Hamburger Icon-->
+            <label for="menu-toggle" class="hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link active-link">Check-Out</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <!--Close Button-->
+                <label for="menu-toggle" class="close-btn"><b>X</b> Close </label>
+            </ul>
+            <!--Menu Overlay-->
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+
+
+            <!--HIDDEN NAVIGATION LINKS AND HAMBURGER FOR TABLET-->
+            <ul class="nav-visible">
+                <li class="nav-tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-tab">
+                    <a href="shop.html">Shop</a>
+            </ul>
+
+            <input type="checkbox" id="tab-menu-toggle" class="tab-menu-toggle">
+            <label for="tab-menu-toggle" class="tab-hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-tab-menu">
+                <li class="nav-tab-item">
+                    <a href="product.html">Product Details</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li class="nav-tab-item active-link">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <label for="tab-menu-toggle" class="tab-close-btn"><b>X</b> Close
+                </label>
+            </ul>
+
+            <label for="tab-menu-toggle" class="tab-menu-overlay"></label>
+            <!--END OF TABLET'S HIDDEN NAVIGATION LINKS-->
+        </nav>
+
+    </header>
+
+
+    <main id="checkout-main">
+
+
+        <!-- CHECK-OUT HERO SECTION -->
+        <section class="checkout-hero-section">
+            <h2>Secure Check-Out</h2>
+            <p>Complete your order safely and conveniently</p>
+        </section>
+
+
+        <!-- MAIN CHECKOUT SECTION -->
+        <form action="" id="checkout-process-form">
+            <section class="checkout-process-section">
+
+                <!--LEFT COLUMN: BILLING + SHIPPING INFO-->
+                <div class="billing-shipping-column">
+                    <div class="billing">
+                        <h2>Billing Information</h2>
+
+                        <div class="checkout-input-flex">
+                            <input type="text" name="" id="fullName" placeholder="Full Name" required>
+                            <input type="email" name="" id="E-mail" placeholder="Email" required>
+                            <input type="tel" name="" id="phoneNum" placeholder="Phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="shipping-address">
+                        <h2>Shipping Address</h2>
+
+                        <div class="checkout-input-flex">
+                            <input type="text" name="" id="address" placeholder="Address" required>
+                            <input type="text" name="" id="city" placeholder="City" required>
+                            <input type="text" name="" id="state" placeholder="State" required>
+                            <input type="text" name="" id="country" placeholder="Country" required>
+                        </div>
+
+                    </div>
+
+                    <div class="delivery-method">
+
+                        <h2>Delivery Method</h2>
+                        <label for="type"><input type="radio" name="method" id="type">Standard</label>
+                        <label for="type2"><input type="radio" name="method" id="type2">Express</label>
+                    </div>
+
+                    <div class="payment-details">
+
+                        <h2>Payment Details</h2>
+
+                        <div class="checkout-input-flex">
+                            <input type="tel" name="" id="cardNum" placeholder="Card Number" maxlength="19">
+                            <input type="tel" name="" id="expiry" placeholder="Expiry (MM/YY)" maxlength="5">
+                            <input type="tel" name="" id="CVV" maxlength="3" pattern="\d{3}" inputmode="numeric"
+                                placeholder="CVV">
+                            <label for="check" class="label-card"><input type="checkbox" name="" id="check"
+                                    class="check-card">Save
+                                Card</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--CHECKOUT ORDER SUMMARY-->
+                <div class="order-summary-container">
+
+                    <h3>Order Summary</h3>
+
+                    <!-- ORDER ROWS FROM CART PAGE  -->
+                    <div class="order-flex-container">
+                        <div class="order-flex">
+                            <figure class="checkout-order-figure">
+                                <img src="Images/products/flash drive 128gb.jpg" alt="" class="order-img">
+                            </figure>
+                            <p class="checkout-order-name">T-Shirt
+                                <br> <input type=" number" id="order-qty" min="1" max="10" value="1"
+                                    class="checkout-order-qty">
+                            </p>
+                            <p class="checkout-order-price"> &#36; 34.99</p>
+                        </div>
+
+                        <div class="order-flex">
+                            <figure class="checkout-order-figure">
+                                <img src="Images/products/focal headphones.jpg" alt="" class="order-img">
+                            </figure>
+
+                            <p class="checkout-order-name">Focal Headphones
+                                <br> <input type="number" id="order-qty" min="1" max="10" value="1"
+                                    class="checkout-order-qty">
+                            </p>
+
+                            <p class="checkout-order-price"> &#36; 126.99</p>
+                        </div>
+
+                        <div class="order-flex">
+                            <figure class="checkout-order-figure">
+                                <img src="Images/products/black skip rope.jpeg" alt="" class="order-img">
+                            </figure>
+
+                            <p class="checkout-order-name">Skip Rope
+                                <br><input type="number" id="order-qty" min="1" max="10" value="1"
+                                    class="checkout-order-qty">
+                            </p>
+
+                            <p class="checkout-order-price"> &#36; 16.99</p>
+                        </div>
+
+                        <div class="order-flex">
+                            <figure class="checkout-order-figure">
+                                <img src="Images/products/Dining set (chop stick).jpg" alt="" class="order-img">
+                            </figure>
+
+                            <p class="checkout-order-name">Dinning Set
+                                <br> <input type="number" id="order-qty" min="1" max="10" value="1"
+                                    class="checkout-order-qty">
+                            </p>
+
+                            <p class="checkout-order-price"> &#36; 11.99</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="order-prices">
+
+                        <p>Subtotal: <span class="checkout-subtotal">&#36; 190.96</span></p>
+                        <hr>
+                        <p>Estimated Shipping:
+                            <span class="checkout-est-shipping">&#36; 0.00</span>
+                        </p>
+                        <sup>free below &#36; 1000</sup>
+                        <hr>
+                        <p class="grand-total">Grand Total:
+                            <span class="checkout-grand-total">&#36; 190.96</span>
+                        </p>
+
+                        <button class="place-order checkout-btn" type="submit">
+                            Place Order
+                        </button>
+
+                        <button class="return-cart continue-shopping" id="return-cart" type="reset">
+                            Return to Cart
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </section>
+        </form>
+
+
+        <!-- WHY SHOP WITH US SECTION -->
+        <section class="why-novacart">
+            <h2>Why Shop with NovaCart?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <!-- <img src="Images/icon-delivery.svg" alt=""> -->
+                    <h3>Fast Delivery</h3>
+                    <p>We ship your order within 24 hours with real-time tracking.</p>
+                </div>
+
+                <div class="why-item">
+                    <!-- <img src="Images/icon-shield.svg" alt=""> -->
+                    <h3>Secure Payments</h3>
+                    <p>Your transactions are protected by 256-bit encryption.</p>
+                </div>
+
+                <div class="why-item">
+                    <!-- <img src="Images/icon-support.svg" alt=""> -->
+                    <h3>24/7 Support</h3>
+                    <p>We're here for you — anytime, anywhere.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">
+                        Stay Updated, Stay Ahead<br /><span>With NovaCart</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Join our exclusive NovaCart community to get the
+                        latest updates on deals of the day, upcoming product
+                        launches and members-only discounts. Suscribing to
+                        our newsletter gets you exclusive deals, the latest
+                        product updates and shopping teams -- Straight to
+                        your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!--FOOTER SECTION-->
+        <footer class="site-footer">
+            <!-- Quick Navigation Links -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>
+                        About <br />
+                        NovaCart
+                    </h3>
+                    <p>
+                        NovaCart is your go-to online store for electronics,
+                        fashion, and more.<br />
+                        Shop quality products at affordable prices with fast
+                        delivery.
+                    </p>
+                </div>
+
+                <!---Footer Quick Links-->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Product Detail</a></li>
+                        <li><a href="cart.html">Shop Cart</a></li>
+                        <li><a href="checkout.html">Check-Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for updates and exclusive deals.</p>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required class="footer-input" />
+                        <button type="submit" class="footer-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-socials">
+                    <h3 class="footer-title">Follow Us</h3>
+
+                    <div class="social-images">
+                        <a href="https://www.facebook.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-facebook.svg" 
+                            alt="Facebook" class="social-icon" /> -->
+                            <i class="fab fa-facebook" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Facebook</span>
+                        </a>
+
+                        <a href="https://www.twitter.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-twitter.svg" 
+                            alt="X" class="social-icon" /> -->
+                            <i class="fa-brands fa-twitter" id="social-icon"></i>
+                            <span class="social-text">Follow Us on X</span>
+                        </a>
+
+                        <a href="https://www.instagram.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-instagram.svg" 
+                            alt="Instagram" class="social-icon" /> -->
+                            <i class="fa-brands fa-instagram" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p id="copyright">&copy; <span id="copy-year"> 2025 </span>
+                    NovaCart. All rights reserved.
+                </p>
+                <h4>Code with Adam</h4>
+            </div>
+        </footer>
+    </main>
+    <button id="scrollTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JS FILES CONNECTED -->
+    <script src="JS/script - auto update year and scroll-to-top button.js"></script>
+    <script src="JS/script -- cart-functionality.js"></script>
+    <script src="JS/checkout-summary.js"></script>
+    <script src="JS/checkout-billing.js"></script>
+    <script src="JS/checkout-card.js"></script>
+    <script src="JS/checkout-coordinator.js"></script>
+</body>
+
+</html>

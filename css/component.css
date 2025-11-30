@@ -1,0 +1,82 @@
+/*Pseudo element for my Header Navigation Links*/
+
+.nav-link.active-link::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #6b4b8a;
+  margin-top: 3px;
+  margin-left: 0;
+  border-radius: 1px;
+}
+
+/*PSEUDO ELEMENT FOR TABLET NAV LINKS*/
+.nav-tab.active-link::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #6b4b8a;
+  margin-top: 1px;
+  margin-left: 0;
+  border-radius: 1px;
+}
+
+.nav-tab-item.active-link::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: #6b4b8a;
+  margin-top: 1px;
+  margin-left: 0;
+  border-radius: 1px;
+}
+
+/*PRODUCT DETAILS PAGE, CUSTOMER REVIEWS*/
+.customer-reviews .review-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-30%);
+  width: 90px;
+  height: 3px;
+  background-color: #fa7569;
+  margin-top: 1px;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+/*PRODUCT DETAILS PAGE MAY ALSO LIKE SECTION*/
+#like-title::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 3px;
+  background-color: #fa7569;
+  margin-top: 1px;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+/*CART PAGE, MAY ALSO LIKE SECTION*/
+.cart-title::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 3px;
+  background-color: #1f4e5f;
+  margin-top: 1px;
+  margin-left: 0;
+  border-radius: 3px;
+}
+
+

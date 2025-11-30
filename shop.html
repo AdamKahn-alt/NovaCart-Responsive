@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>NovaCart -- Shop</title>
+
+    <!-- Primary Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NovaCart -- Shop">
+    <meta name="Author" content="Adam Kahn">
+    <meta name="description" content="This is a digital e-commerce web html template made by codewithadam">
+
+    <!--Favicon Images-->
+    <link rel="shortcut icon" href="favicon.svg">
+
+    <!-- CSS STYLING LINKS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/myresponsive.css">
+    <link rel="stylesheet" href="css/component.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONTAWESOME ICONS 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--GLOBAL HEADER SECTION-->
+    <header class="site-header ">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h2><a href="index.html">NovaCart</a></h2>
+            </div>
+
+            <!--HIDDEN CHECKBOX-->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <!--Hamburger Icon-->
+            <label for="menu-toggle" class="hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link active-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">Product Detail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a href="checkout.html" class="nav-link">Check-Out</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <!--Close Button-->
+                <label for="menu-toggle" class="close-btn"><b>X</b> Close </label>
+            </ul>
+            <!--Menu Overlay-->
+            <label for="menu-toggle" class="menu-overlay"></label>
+
+
+
+            <!--HIDDEN NAVIGATION LINKS AND HAMBURGER FOR TABLET-->
+            <ul class="nav-visible">
+                <li class="nav-tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-tab active-link">
+                    <a href="shop.html">Shop</a>
+            </ul>
+
+            <input type="checkbox" id="tab-menu-toggle" class="tab-menu-toggle">
+            <label for="tab-menu-toggle" class="tab-hamburger">
+                &#9776;
+            </label>
+
+            <ul class="nav-tab-menu">
+                <li class="nav-tab-item">
+                    <a href="product.html">Product Details</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="checkout.html">Checkout</a>
+                </li>
+                <li class="nav-tab-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <label for="tab-menu-toggle" class="tab-close-btn"><b>X</b> Close
+                </label>
+            </ul>
+
+            <label for="tab-menu-toggle" class="tab-menu-overlay"></label>
+            <!--END OF TABLET'S HIDDEN NAVIGATION LINKS-->
+        </nav>
+
+    </header>
+
+    <main class="shop-main">
+
+
+        <!--SHOP HERO SECTION-->
+        <section class="shop-hero">
+
+            <div class="shop-hero-content">
+
+                <h1 class="shop-title">Our Shop</h1>
+                <p class="shop-subtitle">Find Products you'll love and more, at the best
+                    prices
+                </p>
+            </div>
+
+
+            <!--FILTER/SORT BAR-->
+            <div class="shop-controls-content">
+
+                <form action="" class="filter-form">
+
+                    <select name="category" id="category" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics & Gadgets</option>
+                        <option value="fashion">Fashion & Accessories</option>
+                        <option value="home">Home & Kitchen</option>
+                        <option value="sports">Sports & Equipments</option>
+                    </select>
+
+
+                    <!--Sort Dropdown-->
+                    <select name="sort" id="sort" class="filter-select">
+                        <option value="default">Sort by Default</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                        <option value="new-arrivals">New Arrivals</option>
+                    </select>
+                </form>
+            </div>
+
+        </section>
+
+        <!--MAIN PRODUCTS GRID-->
+        <section class="shop-products">
+
+            <div class="container">
+
+                <!--ELECTRONICS & GADGETS CATEGORY-->
+                <div class="product-category">
+                    <h2 id="electronics" class="category-title">ELECTRONICS & GADGETS</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-05">
+                            <img src="Images/products/black canon camera.jpg" alt="Canon Camera" id="product-image"
+                                class="product-image">
+                            <h3 class="product-name" id="product-name">Canon Camera</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 456.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-08">
+                            <img src="Images/products/focal headphones.jpg" alt="Focal Headphones" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Focal Headphones</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 126.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-15">
+                            <img src="Images/products/flash drive 128gb.jpg" alt="Flash Drive 128GB"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Hard Drive (128GB)</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 34.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-25">
+                            <img src="Images/products/Huawei smartwatch.jpg" alt="Huawei Smartwatch"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Huawei SmartWatch</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 19.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-07-05">
+                            <img src="Images/products/Magic Projector Light lamp.jpg" alt="Projector Light Lamp"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Projector Light Lamp</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 15.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-10-15">
+                            <img src="Images/products/skyradar.jpg" alt="sky radar" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Sky-Radar</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 500.00</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2024-12-05">
+                            <img src="Images/products/fancy cord.jpg" alt="fancy cord" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Light Cord</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 3.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-01-05">
+                            <img src="Images/products/Air7 airpods.jpg" alt="Air7 airpods" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Air7 Airpods</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 113.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--FASHION AND ACCESSORIES CATEGORY-->
+                <div class="product-category">
+                    <h2 class="category-title" id="fashion">FASHION & ACCESSORIES</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2023-05-19">
+                            <img src="Images/products/High Heels.jpg" alt="High Heels" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">High Heels</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 76.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-09">
+                            <img src="Images/products/Lady Necklace.jpg" alt=" Diamond Necklace" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Amora Heart Pendant</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 36.49</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-05-29">
+                            <img src="Images/products/Loafers.jpg" alt="Loafers" id="product-image"
+                                class="product-image">
+                            <h3 class="product-name" id="product-name">Loafers</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 110.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2023-11-19">
+                            <img src="Images/products/Skechers for Women.jpg" alt="Lady Sketchers" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Sketchers</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 19.49</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2024-06-19">
+                            <img src="Images/products/Smart Shade.jpg" alt="Smart Shades" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Smart Shades</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 15.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-01-19">
+                            <img src="Images/products/3-way Suit.jpg" alt="3-way Suit" id="product-image"
+                                class="product-image">
+                            <h3 class="product-name" id="product-name">3-way Suit</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 60.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2022-05-31">
+                            <img src="Images/products/Backpack.jpg" alt="Backpack" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Backpack</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 20.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2020-02-07">
+                            <img src="Images/products/Burt's Bees Baby Pajamas.jpg" alt="Burt Bee's Pajamas for babies"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Burt Bee's Pajamas for babies</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 9.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--SPORTS AND EQUIPMENTS CATEGORY-->
+                <div class="product-category">
+                    <h2 class="category-title" id="sports">SPORTS & EQUIPMENTS</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2025-10-10">
+                            <img src="Images/products/black skip rope.jpeg" alt="Black Skip Rope" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Black Skip Rope</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 16.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-19">
+                            <img src="Images/products/tennis ball.jpeg" alt="Tennis Ball" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Tennis Ball</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 12.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-19">
+                            <img src="Images/products/White Air Jordan.jpeg" alt="White Shoes" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">White Shoes</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 34.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2024-12-15">
+                            <img src="Images/products/skiing equipment.jpeg" alt="skiing equipment"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Ski-ing Equipments</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 19.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2020-01-01">
+                            <img src="Images/products/tennis paddles.jpg" alt="Tennis Paddles" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Pair of Table Tennis Paddles</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 4.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2007-07-07">
+                            <img src="Images/products/football.jpeg" alt="Football" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Football</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 1.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2021-08-20">
+                            <img src="Images/products/Table Tennis Paddle.jpeg" alt="Tennis Paddle"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Table Tennis Paddle</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 2.59</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--HOME AND KITCHEN CATEGORY-->
+                <div class="product-category">
+                    <h2 class="category-title" id="home">HOME &#38; KITCHEN</h2>
+
+                    <div class="product-grid">
+                        <div class="product-card" id="product-card-cont" data-date="2025-10-19">
+                            <img src="Images/products/KitchenAid Stand Mixer.jpg" alt="Kitchen Mixer"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">KitchenAid Stand Mixer</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 730.00</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2023-05-19">
+                            <img src="Images/products/green plates .jpg" alt="Green Plates" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Assietes</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 1.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2018-02-29">
+                            <img src="Images/products/lemon aid daily.jpg" alt="Lemon Aid" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Lemon Aid Daily</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 4.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2021-02-19">
+                            <img src="Images/products/Scentil perf.jpg" alt="Scentil" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Scentil</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 4.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2007-04-24">
+                            <img src="Images/products/female toiletries.jpg" alt="Female toiletries"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Female Toiletries</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 8.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="1990-03-11">
+                            <img src="Images/products/Dining set (chop stick).jpg" alt="Dining Set"
+                                class="product-image" id="product-image">
+                            <h3 class="product-name" id="product-name">Dinning Set</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 11.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2024-05-10">
+                            <img src="Images/products/Granola.jpg" alt="Granola" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Granola</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 5.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                        <div class="product-card" id="product-card-cont" data-date="2025-11-20">
+                            <img src="Images/products/coffee mug.jpg" alt="Coffee Mug" class="product-image"
+                                id="product-image">
+                            <h3 class="product-name" id="product-name">Coffee Mug</h3>
+
+                            <p class="product-prices" id="product-price">&#36; 2.99</p>
+
+                            <a href="cart.html">
+                                <button class="product-button" id="add-to-cart-btn">Add to Cart</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!--GLOBAL PAGINATION-->
+                <div class="pagination">
+                    <a href="shop.html" class="prev">Prev</a>
+                    <a href="shop.html" class="pagnum active">1</a>
+                    <a href="shop2.html" class="pagnum">2</a>
+                    <!--<a href="shop3.html" class="pagnum">3</a>-->
+                    <a href="shop2.html" class="next">Next</a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">
+                        Stay Updated, Stay Ahead<br /><span>With NovaCart</span>
+                    </h2>
+                    <p class="newsletter-description">
+                        Join our exclusive NovaCart community to get the
+                        latest updates on deals of the day, upcoming product
+                        launches and members-only discounts. Suscribing to
+                        our newsletter gets you exclusive deals, the latest
+                        product updates and shopping teams -- Straight to
+                        your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                    <button type="submit" class="newsletter-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+
+
+        <!--FOOTER SECTION-->
+        <footer class="site-footer">
+            <!-- Quick Navigation Links -->
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>
+                        About <br />
+                        NovaCart
+                    </h3>
+                    <p>
+                        NovaCart is your go-to online store for electronics,
+                        fashion, and more.<br />
+                        Shop quality products at affordable prices with fast
+                        delivery.
+                    </p>
+                </div>
+
+                <!---Footer Quick Links-->
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Product Detail</a></li>
+                        <li><a href="cart.html">Shop Cart</a></li>
+                        <li><a href="checkout.html">Check-Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe for updates and exclusive deals.</p>
+
+                    <form class="footer-form">
+                        <input type="email" placeholder="Enter your email" required class="footer-input" />
+                        <button type="submit" class="footer-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="footer-socials">
+                    <h3 class="footer-title">Follow Us</h3>
+
+                    <div class="social-images">
+                        <a href="https://www.facebook.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-facebook.svg" 
+                            alt="Facebook" class="social-icon" /> -->
+                            <i class="fab fa-facebook" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Facebook</span>
+                        </a>
+
+                        <a href="https://www.twitter.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-twitter.svg" 
+                            alt="X" class="social-icon" /> -->
+                            <i class="fa-brands fa-twitter" id="social-icon"></i>
+                            <span class="social-text">Follow Us on X</span>
+                        </a>
+
+                        <a href="https://www.instagram.com" class="social-item">
+                            <!-- <img src="Images/icons/logo-instagram.svg" 
+                            alt="Instagram" class="social-icon" /> -->
+                            <i class="fa-brands fa-instagram" id="social-icon"></i>
+                            <span class="social-text">Follow Us on Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p id="copyright">&copy; <span id="copy-year"> 2025 </span>
+                    NovaCart. All rights reserved.
+                </p>
+                <h4>Code with Adam</h4>
+            </div>
+        </footer>
+    </main>
+    <button id="scrollTopBtn" title="Go to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JS FILES CONNECTED -->
+    <script src="JS/script - auto update year and scroll-to-top button.js"></script>
+    <script src="JS/script -- cart-functionality.js"></script>
+    <script src="JS/script -- shop page functionality.js"></script>
+</body>
+
+</html>
