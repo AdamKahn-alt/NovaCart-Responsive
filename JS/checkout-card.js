@@ -10,7 +10,7 @@
   const ICONS = {
     visa: ICON_PATH + "visa.png",
     mastercard: ICON_PATH + "mastercard.png",
-    verve: ICON_PATH + "verve.png",
+    verve: ICON_PATH + "Verve.png",
     amex: ICON_PATH + "amex.jpeg",
     invalid: ICON_PATH + "invalid-card.png",
   };
@@ -419,4 +419,5 @@
 
   console.log("checkout-card.js loaded");
 })();
+
 
