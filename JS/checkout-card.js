@@ -6,7 +6,7 @@
   window.NovaCart._checkoutCardInit = true;
 
   const STORAGE_KEY = "novacart_checkout_storage"; // <--- same storage key
-  const ICON_PATH = "Images/Icons/";
+  const ICON_PATH = "Images/icons/";
   const ICONS = {
     visa: ICON_PATH + "visa.png",
     mastercard: ICON_PATH + "mastercard.png",
@@ -419,3 +419,4 @@
 
   console.log("checkout-card.js loaded");
 })();
+
